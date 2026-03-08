@@ -27,7 +27,28 @@ A functional Scala application that processes the Country Delight sales dataset.
    ```
    *Note: On the first run, `sbt` will download the necessary Scala compiler version (3.3.1) and library dependencies (like `scala-parallel-collections`).*
 
-## Expected OutputFiles
+## How to Run with Docker
+
+If you prefer to run the application using Docker, follow these steps:
+
+1. **Build the Docker Image**:
+   ```bash
+   docker build -t countrydelight-sales .
+   ```
+2. **Run the Container**:
+   Due to the large size of the dataset, it is not copied into the Docker image. Instead, you should mount your local project directory to the container so it can access the input CSV and save the output CSVs back to your host machine:
+
+   **On Windows (PowerShell):**
+   ```powershell
+   docker run --rm -v "${PWD}:/app" countrydelight-sales
+   ```
+
+   **On Linux/Mac:**
+   ```bash
+   docker run --rm -v "$(pwd):/app" countrydelight-sales
+   ```
+
+## Expected Output Files
 
 Once the process finishes successfully, it will display a performance comparison between sequential and parallel execution in the console and produce the following files in the project root:
 - `output_sequential.csv`

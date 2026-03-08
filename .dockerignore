@@ -1,0 +1,14 @@
+target/
+project/project/
+project/target/
+.bsp/
+.idea/
+.vscode/
+*.class
+*.log
+*.jar
+output_sequential.csv
+output_parallel.csv
+malformed_seq.csv
+malformed_par.csv
+*.csv
