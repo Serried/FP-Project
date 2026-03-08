@@ -1,0 +1,52 @@
+# SBT
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+project/target/
+.history
+.cache
+
+# Scala IDE / Eclipse
+.cache-main
+.scala_dependencies
+.worksheet
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+
+# Metals (Scala Language Server)
+.metals/
+.bloop/
+.ammonite/
+metals.sbt
+project/metals.sbt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Byte-compiled / Optimized / DLL files
+*.class
+*.dll
+*.so
+*.dylib
